@@ -8,7 +8,7 @@ const  url= 'https://randomuser.me/api/'
  
  
 
-    button.addEventListener('click', async()=>{
+    const getUser = async()=>{
         try{
       const data = await fetch(url);
       const response = await data.json()
@@ -63,8 +63,18 @@ if(btn.classList.contains('password')){
         catch(error){
 console.log(error)
         }
-    })
+    }
  
  
 
 
+
+const showUser =()=>{
+ 
+    getUser()
+}
+ 
+
+window.addEventListener('DOMContentLoaded', showUser)
+
+button.addEventListener('click',showUser)
