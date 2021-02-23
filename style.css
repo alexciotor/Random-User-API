@@ -89,7 +89,8 @@ body {
     font-size: 20px;
   }
   #name {
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: bold;
   }
   .btn-content {
     justify-content: space-between;
